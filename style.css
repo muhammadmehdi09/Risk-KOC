@@ -25,6 +25,7 @@ table {
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 25px;
 }
 
 th, td {
