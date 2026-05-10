@@ -2,14 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>KOC Leaderboard</title>
+    <title>Risk: King of Colors Leaderboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>King of Colors Leaderboard</h1>
+    <!-- NAVBAR -->
+    <nav class="navbar">
 
-    <div class="table-container">
+        <div class="nav-left">
+            <img src="logo.png" alt="Risk King of Colors Logo" class="logo">
+            <h1>Risk King of Colors</h1>
+        </div>
+
+        <div class="nav-right">
+            <a href="#">Leaderboard</a>
+            <a href="#">Future Page</a>
+        </div>
+
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+
+        <h1>Leaderboard</h1>
+
         <table>
             <thead>
                 <tr>
@@ -20,11 +37,25 @@
                     <th>King Count</th>
                 </tr>
             </thead>
-            <tbody id="leaderboard">
-                <!-- JS inserts data here -->
-            </tbody>
+
+            <tbody id="leaderboard"></tbody>
+
         </table>
-    </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <!-- <footer class="footer">
+
+        <div class="footer-links">
+            <a href="https://discord.gg/YOUR_INVITE_LINK" target="_blank">
+                Discord
+            </a>
+        </div>
+
+        <p>Developed by ObsidianKnight</p>
+
+    </footer> -->
 
     <script src="script.js"></script>
 
