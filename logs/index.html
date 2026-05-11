@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>King of Colors Logs</title>
+
+    <link rel="icon" type="image/x-icon" href="../Assets/favicon.ico" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img src="../Assets/logo.png" alt="Logo" />
+
+        <h1>
+          <a href="/"> King of Colors </a>
+        </h1>
+      </div>
+
+      <div class="nav-links">
+        <a href="../leaderboard/"> Leaderboard </a>
+        <a href="../calculator/"> Calculator </a>
+        <a href="../logs/"> Logs </a>
+      </div>
+    </nav>
+
+    <main>
+      <div class="logs-top">
+        <h1 id="heading">Action Logs</h1>
+
+        <input type="text" id="searchInput" placeholder="Search logs..." />
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Player</th>
+              <th>Points</th>
+              <th>Description</th>
+              <th>Thread</th>
+            </tr>
+          </thead>
+
+          <tbody id="logsTable"></tbody>
+        </table>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,47 +1,52 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <title>Risk: King of Colors Leaderboard</title>
     <link rel="icon" type="image/x-icon" href="../Assets/favicon.ico" />
     <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- NAVBAR -->
-    <nav class="navbar">
+    <nav>
       <div class="nav-left">
-        <img
-          src="../Assets/logo.png"
-          alt="Risk King of Colors Logo"
-          class="logo"
-        />
-        <h1 class="site-title">
-          <a href="/">King of Colors</a>
+        <img src="../Assets/logo.png" alt="Logo" />
+
+        <h1>
+          <a href="/"> King of Colors </a>
         </h1>
       </div>
-      <div class="nav-right">
-        <a href="/leaderboard/">Leaderboard</a>
-        <a href="/calculator/">Points Calculator</a>
+
+      <div class="nav-links">
+        <a href="../leaderboard/"> Leaderboard </a>
+        <a href="../calculator/"> Calculator </a>
+        <a href="../logs/"> Logs </a>
       </div>
     </nav>
 
     <!-- MAIN CONTENT -->
-    <main class="container">
-      <h1>Leaderboard</h1>
+    <div class="leaderboard-top">
+        <h1>
+            Leaderboard
+        </h1>
+        <input type="text" id="searchInput" placeholder="Search players...">
+    </div>
 
-      <table>
+    <table>
         <thead>
-          <tr>
-            <th>Nickname</th>
-            <th>Points</th>
-            <th>Current Rank</th>
-            <th>Highest Rank</th>
-            <th>King Count</th>
-          </tr>
+            <tr>
+                <th>Nickname</th>
+                <th>Points</th>
+                <th>Current Rank</th>
+                <th>Highest Rank</th>
+                <th>King Count</th>
+            </tr>
         </thead>
 
         <tbody id="leaderboard"></tbody>
-      </table>
+    </table>
     </main>
 
     <!-- FOOTER -->
@@ -58,5 +63,6 @@
     </footer> -->
 
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>

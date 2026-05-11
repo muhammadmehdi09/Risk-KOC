@@ -1,0 +1,142 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: #111827;
+    border-bottom: 1px solid #1f2937;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.nav-left img {
+    width: 55px;
+}
+
+.nav-left h1 {
+    margin: 0;
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #d1d5db;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+/* MAIN */
+
+main {
+    padding: 40px;
+}
+
+.logs-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+#heading {
+    margin-left: 35px;
+}
+
+#searchInput {
+    width: 20%;
+    min-width: 220px;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background: #1f2937;
+    color: white;
+    margin-right: 40px;
+}
+
+/* TABLE */
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+thead {
+    background: #111827;
+}
+
+th {
+    padding: 18px;
+    text-align: left;
+}
+
+td {
+    padding: 18px;
+}
+
+tbody tr {
+    border-left: 10px solid #5dadec;
+    background:
+        linear-gradient(90deg,
+            rgba(93, 173, 236, 0.22),
+            transparent);
+    transition: 0.25s ease;
+}
+
+tbody tr:hover {
+    transform: translateX(4px);
+    background:
+        linear-gradient(90deg,
+            rgba(93, 173, 236, 0.32),
+            transparent);
+}
+
+/* THREAD LINK */
+
+.thread-link {
+    color: #93c5fd;
+    text-decoration: none;
+}
+
+.thread-link:hover {
+    text-decoration: underline;
+}
