@@ -10,7 +10,7 @@ const tableBody = document.getElementById("leaderboard");
 const RANK_COLORS = {
   "Knight-Dame": "#d98aa1",
   "Baronet-Baroness": "#7f6bb3",
-  "Baron-Baroness": "#c06d0b",
+  "Baron-Baronness": "#c06d0b",
   "Viscount-Viscountess": "#b02a3a",
   "Count-Countess": "#c9c9c9",
   "Marquess-Marchioness": "#262b30",
