@@ -1,63 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Risk: King of Colors Leaderboard</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <title>Risk King of Colors</title>
+
+    <link rel="icon" type="image/x-icon" href="Assets/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
     <!-- NAVBAR -->
+
     <nav class="navbar">
-
-        <div class="nav-left">
-            <img src="logo.png" alt="Risk King of Colors Logo" class="logo">
-            <h1>Risk King of Colors</h1>
-        </div>
-
-        <div class="nav-right">
-            <a href="#">Leaderboard</a>
-            <a href="#">Future Page</a>
-        </div>
-
+      <div class="nav-left">
+        <img src="Assets/logo.png" alt="Logo" class="logo" />
+        <h1 class="site-title">
+          <a href="/">King of Colors</a>
+        </h1>
+      </div>
+      <div class="nav-right">
+        <a href="/leaderboard">Leaderboard</a>
+        <a href="/calculator">Points Calculator</a>
+      </div>
     </nav>
 
-    <!-- MAIN CONTENT -->
-    <main class="container">
+    <!-- HERO -->
 
-        <h1>Leaderboard</h1>
+    <section class="hero">
+      <h2>Welcome to the King of Colors Tournament</h2>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Nickname</th>
-                    <th>Points</th>
-                    <th>Current Rank</th>
-                    <th>Highest Rank</th>
-                    <th>King Count</th>
-                </tr>
-            </thead>
+      <p>
+        King of Colors is a competitive Risk tournament system created by
+        b_w_johan, featuring a unique ranked structure ranging from a Knight all
+        the way to the <strong>King</strong>.
+      </p>
 
-            <tbody id="leaderboard"></tbody>
+      <p>
+        Players earn and lose points depending on their rank, game mode, and
+        performance. As ranks rise, the stakes become increasingly brutal. Only
+        one player can claim the throne. Can you be the one to rise through the 
+        ranks and become the next King of Colors?
+      </p>
 
-        </table>
+      <a
+        href="https://discord.gg/uQ5PMKQrV"
+        target="_blank"
+        class="discord-button"
+      >
+        Join Discord Server
+      </a>
+    </section>
 
-    </main>
+    <!-- INFO -->
+
+    <section class="info-section">
+      <div class="info-card">
+        <h3>Leaderboard</h3>
+
+        <p>
+          View rankings, points, king counts, and the current standing of all
+          players.
+        </p>
+
+        <a href="leaderboard.html"> Open Leaderboard </a>
+      </div>
+
+      <div class="info-card">
+        <h3>Points Calculator</h3>
+
+        <p>
+          Calculate tournament points instantly based on rank, wins, and game
+          mode.
+        </p>
+
+        <a href="calculator.html"> Open Calculator </a>
+      </div>
+    </section>
 
     <!-- FOOTER -->
-    <!-- <footer class="footer">
 
-        <div class="footer-links">
-            <a href="https://discord.gg/YOUR_INVITE_LINK" target="_blank">
-                Discord
-            </a>
-        </div>
-
-        <p>Developed by ObsidianKnight</p>
-
-    </footer> -->
-
-    <script src="script.js"></script>
-
-</body>
+    <footer class="footer">
+      <p>Tournament created by b_w_johan</p>
+      <p>Website developed by ObsidianKnight</p>
+    </footer>
+  </body>
 </html>

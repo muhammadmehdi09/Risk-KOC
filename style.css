@@ -1,48 +1,90 @@
+/* HERO */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #0f172a;
     color: white;
     text-align: center;
+    padding: 0;
 }
 
-h1 {
-    margin-top: 30px;
+.hero {
+    max-width: 900px;
+    margin: 140px auto 80px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h2 {
+    font-size: 48px;
     margin-bottom: 20px;
 }
 
-.table-container {
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #d1d5db;
+    margin-bottom: 20px;
+}
+
+.discord-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 28px;
+    background: #5865F2;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    transition: 0.2s;
+}
+
+.discord-button:hover {
+    opacity: 0.85;
+}
+
+/* INFO SECTION */
+
+.info-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
     width: 90%;
-    margin: auto;
-    overflow-x: auto;
+    margin: 0 auto 80px auto;
 }
 
-table {
-    width: 85%;
-    border-collapse: collapse;
-    background: #111827;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 25px;
-}
-
-th, td {
-    padding: 12px;
-    border-bottom: 1px solid #1f2937;
-    text-align: center;
-}
-
-th {
-    background: #1e293b;
-    color: #93c5fd;
-}
-
-tr:hover {
+.info-card {
+    width: 340px;
     background: #1f2937;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #374151;
+    transition: 0.2s;
 }
 
+.info-card:hover {
+    transform: translateY(-4px);
+}
+
+.info-card h3 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+.info-card p {
+    color: #d1d5db;
+    line-height: 1.6;
+}
+
+.info-card a {
+    display: inline-block;
+    margin-top: 16px;
+    color: #5dadec;
+    text-decoration: none;
+    font-weight: bold;
+}
 
 .navbar {
     display: flex;
@@ -66,8 +108,8 @@ tr:hover {
 }
 
 .logo {
-    width: 64px;
-    height: 64px;
+    width: 50px;
+    height: 50px;
     object-fit: contain;
 }
 
@@ -93,4 +135,19 @@ tr:hover {
 
 .nav-right a:hover {
     opacity: 0.7;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.site-title a {
+    color: white;
+    text-decoration: none;
+}
+
+.site-title a:hover {
+    opacity: 0.85;
 }
