@@ -115,14 +115,4 @@ searchInput.addEventListener("input", () => {
   renderLogs(filtered);
 });
 
-/*
-    Start
-*/
-
 loadLogs();
-
-/*
-    Auto refresh
-*/
-
-setInterval(loadLogs, 10000);
